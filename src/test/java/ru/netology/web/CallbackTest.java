@@ -51,7 +51,7 @@ class CallbackTest {
     void shouldTestV1() {
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Василий");
-        elements.get(1).sendKeys("+79270000000");
+        elements.get(1).sendKeys("+79270000000 ");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.className("button")).click();
         String text = driver.findElement(By.className("alert-success")).getText();
